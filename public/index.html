@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,9 +10,65 @@
     <script src="./src/config.js"></script>
     <link rel="stylesheet" href="./src/css/style.css">
     <title>Employment Agency</title>
-
   </head>
+
   <body>
+
+    <header>
+      <h1 class="titulo">Actio<br>Employment Agency</h1>
+    </header>
+    <main>
+      <form id="form">
+        <fieldset id="form_register">
+          <legend>Sign up to apply for a job</legend>
+          <div id="form_inputs">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName">
+            
+
+            <label for="cpf">CPF</label>
+            <input type="number" id="cpf" name="cpf">
+            
+
+            <label for="birthDate">Birth Date</label>
+            <input type="date" id="birthDate" name="birthDate"> 
+            
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city">
+            
+
+            <label for="state">State</label>
+            <input type="text" id="state" name="state">
+            
+
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country">
+            
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email"> 
+           
+
+            <label for="about">Tell us a little about yourself concisely</label>
+            <textarea name="about" id="about" cols="30" rows="10"></textarea>
+
+            <button type="submit">Send</button>
+          </div>
+          
+
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <span>Platform designed to help you find your Job |</span>
+      <span>| Taubaté - SP</span>
+    </footer>
     
   </body>
 </html>
