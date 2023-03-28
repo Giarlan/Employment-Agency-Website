@@ -43,6 +43,10 @@ main {
     min-height: calc(100% - (var(--header-height) + var(--footer-height)));
 }
 
+fieldset {
+    border: 1px solid rgb(23, 88, 180);
+}
+
 #form_register {
     color: #d0a028;
 }
@@ -53,6 +57,8 @@ main {
     align-items: center;
     padding: 20px;
     width: 40em;
+    border: 1px solid rgb(23, 88, 180);
+    border-radius: 10px;
 }
 
 label {
@@ -66,12 +72,14 @@ input {
     height: var(--inputs-height);
     font-size: 20px;
     border-radius: 5PX;
+    border: 1px solid rgb(23, 88, 180);
 }
 
 textarea {
     width: 80%;
     border-radius: 5px;
     padding: 5PX;
+    border: 1px solid rgb(23, 88, 180);
 }
 
 button {
