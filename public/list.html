@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registrations list</title>
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
+  <script src="./src/js/config.js"></script>
+
+  <link rel="stylesheet" href="./src/css/register.css">
+  <link rel="stylesheet" href="./src/css/list.css">
+</head>
+
+<body>
+
+  <header>
+    <h1 class="title">Registrations list</h1>
+  </header>
+  <main>
+
+    <form id="form__filters">
+
+      <fieldset class="fieldset__default" id="filters__inputs">
+        <legend>Filters</legend>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="cpf">CPF</label>
+        <input type="number" id="cpf" name="cpf">
+
+        <button id="botton__filter" class="primary__button">Filter</button>
+
+      </fieldset>
+
+    </form>
+
+    <ol id="registers__list">
+
+    </ol>
+
+    <div class="pagination_list">
+      <button class="primary__button" id="previous__button">Previous</button>
+      <button class="primary__button" id="next__button">Next</button>
+        </div>
+  </main>
+  <footer>
+    <span>Platform designed to help you find your Job |</span>
+    <span>| Taubaté - SP</span>
+  </footer>
+
+  <script src="./src/js/list.js" type="module"></script>
+</body>
+
+</html>

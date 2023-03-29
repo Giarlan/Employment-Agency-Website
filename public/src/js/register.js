@@ -1,10 +1,12 @@
+import {registers} from "./service.js";
+
 const form = document.querySelector('#form');
 
 form.addEventListener('submit', (event)=> {
 
     event.preventDefault();
 
-    let newInform = {
+    let newRegister = {
         name:form.name.value,
         lastName:form.lastName.value,
         cpf:form.cpf.value,
@@ -15,5 +17,14 @@ form.addEventListener('submit', (event)=> {
         email:form.email.value,
         about:form.about.value
     }
-    console.log(newInform);
+    console.log(newRegister);
+    registers.add(newRegister).then((docRef) => {
+        form.reset();
+        alert(`Cadastro de ${newRegister.name} realizado com sucesso!`);
+    })
+    .catch ((error) => {
+        alert(`O cadastro de ${newRegister.name} não pode ser concluido!`);
+        console.error("Error adding document: ", error);
+    });
+  
 })

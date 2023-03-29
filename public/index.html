@@ -1,75 +1,46 @@
 <!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-firestore.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.18.0/firebase-analytics.js"></script>
-    <script src="./src/config.js"></script>
-    <link rel="stylesheet" href="./src/css/style.css">
-    <title>Employment Agency</title>
-  </head>
-
-  <body>
-
-    <header>
-      <h1 class="titulo">Actio<br>Employment Agency</h1>
-    </header>
-    <main>
-      <form id="form">
-        <fieldset id="form_register">
-          <legend>Sign up to apply for a job</legend>
-          <div id="form_inputs">
-
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name">
-            
-
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName">
-            
-
-            <label for="cpf">CPF</label>
-            <input type="number" id="cpf" name="cpf">
-            
-
-            <label for="birthDate">Birth Date</label>
-            <input type="date" id="birthDate" name="birthDate"> 
-            
-
-            <label for="city">City</label>
-            <input type="text" id="city" name="city">
-            
-
-            <label for="state">State</label>
-            <input type="text" id="state" name="state">
-            
-
-            <label for="country">Country</label>
-            <input type="text" id="country" name="country">
-            
-
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email"> 
-           
-
-            <label for="about">Tell us a little about yourself concisely</label>
-            <textarea name="about" id="about" cols="30" rows="10"></textarea>
-
-            <button type="submit">Send</button>
-          </div>         
-
-        </fieldset>
-      </form>
-    </main>
-    <footer>
-      <span>Platform designed to help you find your Job |</span>
-      <span>| Taubaté - SP</span>
-    </footer>
-
-    <script src="./src/js/register.js" type="module"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/syle.css">
+    <title>Home Page</title>
+</head>
+<body>
     
-  </body>
+    <header>
+        <div class="logo">
+            <img id="img1" src="./src/images/gear-wheel-with-cogs_icon-icons.com_56957.png" alt="">
+            <h1>Actio</h1>
+        </div>        
+    
+        <nav>
+            <ul class="menu">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Partnerships</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="./register.html">Join Us</a></li>                   
+            </ul>
+        </nav>
+        
+        <div class="profile">
+            <img id="image2" src="./src/images/perfil-de-usuario.png" alt="">
+            <div class="user-title">User</div>
+        </div>        
+    </header>    
+        
+    <section class="main">
+        <h2>Employment Agency</h2>
+
+        <img id="img3"  src="./src/images/png-transparent-engineer-illustration-civil-engineering-euclidean-architectural-engineering-engineer-building-hand-people.png" alt="">
+
+        <p>Your opportunities can be here!</p>
+        
+    </section>       
+    
+     
+</body>
 </html>

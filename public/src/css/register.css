@@ -23,16 +23,50 @@ header {
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: center;
+    justify-content:space-around;
     height: var(--header-height);
     background-color: #F3F3F3;
+    box-shadow: 0px 5px 20px rgb(45, 95, 187);
+    background-color: rgb(45, 95, 187);
 }
 
-.titulo {
-    font-size: 30px;
-    margin: 0;
-    color: #d0a028;
+#img1 {
+    width: 40px;
+}
 
+h1 {
+    color: #fff;
+}
+
+.menu {
+    display: flex;  
+    margin-right: 40px;
+    flex-wrap: wrap;
+    font-family: 'Comfortaa', cursive;  
+}
+
+li  {
+    list-style: none;
+    padding: 10px 20px 10px 20px;
+    margin: 40px;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    transition-duration: 1.5s;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    background-color:  rgb(45, 95, 187);
+    color: #fff;    
+}
+
+a:hover {
+    background-color: #fff;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    color: rgb(4, 10, 22);
 }
 
 main {
@@ -48,7 +82,7 @@ fieldset {
 }
 
 #form_register {
-    color: #d0a028;
+    color: rgb(45, 95, 187);
 }
 
 #form_inputs {
